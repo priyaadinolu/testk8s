@@ -1,0 +1,19 @@
+apiVersion: v1
+kind: ReplicationController
+metadata:
+  name: myreplicacon
+spec:
+  replicas: 3
+  selector: 
+    app: myvertexapp
+  template:
+    metadata:
+      name: complexpod
+      labels:
+        app: myvertexapp
+    spec:
+      containers:
+         - name: myjava
+           image: priyas2180/myjavaimage08:2
+           ports: 
+            - containerPort: 8080
