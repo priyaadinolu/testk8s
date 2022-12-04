@@ -5,15 +5,15 @@ metadata:
 spec:
   replicas: 3
   selector: 
-    app: myvertexapp
+    app: vertex
   template:
     metadata:
       name: complexpod
       labels:
-        app: myvertexapp
+        app: vertex
     spec:
       containers:
          - name: myjava
-           image: priyas2180/myjavaimage08:2
+           image: nginx
            ports: 
             - containerPort: 8080
