@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: deployment-container
-          image: nginx
+          image: php-apache
           ports:
           - containerPort: 80
