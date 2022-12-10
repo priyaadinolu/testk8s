@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
         - name: deployment-container
-          image: php-apache
+          image: priyas2180/myjavaimage06:1
           ports:
-          - containerPort: 80
+          - containerPort: 8080
